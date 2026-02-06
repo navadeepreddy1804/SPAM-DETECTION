@@ -25,7 +25,7 @@ Labels: 0 → Ham (Not Spam), 1 → Spam
   i. Install dependencies: pip install -r requirements.txt
   ii. Train the model: python train_model.py
   iii. Start the Flask app: python app.py
-  iv. Open your browser and visit: http://127.0.0.1:5000/
+  iv. Open your browser and visit: https://spam-detection-329r.onrender.com/
 
 5. Deployment
   -This application is deployed using Render.
