@@ -1,0 +1,57 @@
+:root{
+    --c1: #6C63FF;
+    --c2: #FF6FD8;
+    --c3: #4FACFE;
+    --c4: #43E97B;
+}
+
+.animated-bg{
+    background: linear-gradient(120deg,var(--c1),var(--c2),var(--c3),var(--c4));
+    background-size: 300% 300%;
+    animation: gradientShift 12s ease infinite;
+}
+
+@keyframes gradientShift{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+
+.bg-orb{
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.orb1{
+    background: #ff6fd8;
+    top: -100px;
+    left: -100px;
+}
+
+.orb2{
+    background: #4facfe;
+    bottom: -100px;
+    right: -100px;
+}
+
+.glass-card{
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(20px);
+    border: rgba(255,255,255,0.3);
+    animation: floatingCard 6s ease-in-out infinite;
+}
+
+@keyframes floatingCard{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-8px);}
+    100%{transform: translateY(0px);}
+}
+
+textarea{
+    backdrop-filter: blur(10px);
+}

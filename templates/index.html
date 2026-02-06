@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Spam Message Detector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="animated-bg min-h-screen flex items-center justify-center p-6 font-[Poppins]">
+<div class="bg-orb orb1"></div>
+<div class="bg-orb orb2"></div>
+<div class="glass-card w-full max-w-xl p-8 rounded-3xl shadow-2xl">
+    <h1 class="text-4xl w-full font-semibold text-center mb-6 text-white"> Spam Message Detector</h1>
+    
+    <div class="relative">
+        <textarea id="messageInput"
+        placeholder="Type or paste your message....."
+        oninput="updateCounter()"
+        class="w-full p-4 h-40 resize-none
+        bg-black/30 border border-white/30
+        rounded-xl text-white placeholder-gray-300
+        focus:outline-none focus:ring-2 focus:ring-indigo-300
+        focus:bg-black/40 transition shadow-inner"></textarea>
+
+        <span id="charCount"
+            class="absolute bottom-3 right-3 text-sm text-gray-300">
+            0 characters
+        </span>
+    </div>
+
+    <button onclick="detectSpam()" id="analyzeBtn"
+    class="mt-6 w-full py-3 rounded-xl text-lg font-semibold
+    bg-gradient-to-r from-indigo-500 to-purple-500
+    hover:scale-105 active:scale-95 transition transform shadow-lg text-white"> Analyze Message</button>
+
+    <p id="result" class="text-center text-xl text-white mt-6 font-semibold"></p>
+</div>
+<script src="/static/script.js"></script>
+</body>
+</html>
