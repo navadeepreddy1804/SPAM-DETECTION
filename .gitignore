@@ -205,3 +205,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Machine Learning artifacts
+model/*.joblib
+# Render / Gunicorn
+gunicorn.log
